@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 6 Assignment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>🚀 Week 6 Assignment 🚀</h1>
+        </header>
+        <main>
+            <section id="buttons" class="card">
+                <h2>Interactive Menu</h2>
+                <div class="dropdown">
+                    <button id="dropdownBtn" class="dropbtn">Actions Menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <button id="toggleTheme">Toggle Theme</button>
+                        <button id="toggleText">Show Text</button>
+                    </div>
+                </div>
+                <p id="hidetext" style="display: none;">Thanks for rescuing me! I was suffocating under there... 😅</p>
+            </section>
+            <section id="form1" class="card">
+                <form novalidate>
+                    <label for="name">👤 Username:</label>
+                    <input type="text" id="name" name="name" placeholder="e.g., Jane Doe" required>
+                    <div class="error-message" id="name-error"></div>
+                    <label for="email">📧 Email:</label>
+                    <input type="text" id="email" name="email" placeholder="e.g., jane.doe@example.com" required>
+                    <div class="error-message" id="email-error"></div>
+                    <label for="password">🔑 Password:</label>
+                    <input type="password" id="password" name="password" placeholder="8+ chars, 1 uppercase, 1 number, 1 special" required>
+                    <div class="error-message" id="password-error"></div>
+                    <button id="submit">Submit</button>
+                    <div id="success-message"></div>
+                </form>
+            </section>
+
+            <section id="faq" class="card">
+                <h2>Collapsible FAQ</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">What is JavaScript?</button>
+                        <div class="faq-answer">
+                            <p>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript specification. It is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is the DOM?</button>
+                        <div class="faq-answer">
+                            <p>The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
