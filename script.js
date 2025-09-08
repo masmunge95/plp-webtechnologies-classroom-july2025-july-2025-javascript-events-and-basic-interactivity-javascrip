@@ -93,7 +93,7 @@ const validateForm = () => {
     // If all checks pass, show success message and reset the form
     if (isValid) {
         successMessage.innerText = '✅ Form submitted successfully!';
-        // For this example, we'll just clear the form after a short delay.
+        // Clear the form after a short delay.
         setTimeout(() => {
             form.reset();
             clearErrors();
